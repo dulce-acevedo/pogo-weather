@@ -1,0 +1,14 @@
+
+.back{
+    background-image: url("../images/background1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20%;
+    padding-top: 39.89%;
+}  
+.text-shadow-8xl{
+    text-shadow: 4px 6px #004aad;
+}
+.text-shadow-4xl{
+    text-shadow: 2px 3px #004aad;
+}

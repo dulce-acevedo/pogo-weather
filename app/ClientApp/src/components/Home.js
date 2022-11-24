@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
+import '../style/home.css';
+import background from '../images/background1.png';
+import logo from '../images/logo.png';
 
 export class Home extends Component {
   static displayName = Home.name;
 
   render() {
     return (
-      <div>
-        <h1 className="  bg-green-500
- text-2xl font-bold underline">Hello, world!</h1>
-        <p>Welcome to your new single-page application, built with:</p>
-        <button class="btn rounded-full">One</button>
-        <ul>
-          <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-          <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
-          <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-        </ul>
-        <p>To help you get started, we have also set up:</p>
-        <ul>
-          <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-          <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
-          <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
-        </ul>
-        <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
+      <div className='h-full justify-center items-center bg-white'> 
+        <div className='inset-0 flex justify-center items-center h-5/6 relative z-0' style={{backgroundImage: `linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,1,1,1))`}}>
+          <img src={background}/>
+          <div className='absolute inset-0 flex flex-col justify-center items-center z-10 h-full' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(50,50,50,50))`}}>
+            <div className='w-3/5'>
+              <div className='flex flex-row justify-center items-center relative z-0'>
+                <img src={logo} alt="logo" className="w-80" />
+                <h1 className="text-8xl text-center	font-bold text-white text-shadow-8xl justify-self-center grow">PoGoWeather</h1>
+                
+              </div>
+              
+              <div className='text-3xl text-center	'>
+              Plan when this week your favourite pokemon will have weather boost and will be more likely to appear
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='h-5/6'>
+          uwu
+        </div>
       </div>
+      
     );
   }
 }
